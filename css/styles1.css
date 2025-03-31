@@ -1,0 +1,275 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #4DD0E1, #FF8A65);
+}
+
+.navbar {
+    height: 80px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.navbar-nav .nav-link {
+    color: white;
+    margin-right: 20px;
+    
+}
+.navbar-nav .nav-link {
+    color: white;
+    padding: 20px 35px;
+    font-size: 18px;
+}
+
+.navbar-nav .nav-link:hover{
+    cursor: pointer;
+    color: yellow;
+    text-decoration: underline;
+  
+}
+
+.navbar-nav .nav-link.active {
+    color: yellow !important;
+}
+
+.navbar-nav .nav-link.active:hover{
+    text-decoration: none;
+}
+
+.navbar-brand{
+    font-size: 30px;
+    font-weight: 500;
+    color: #4DD0E1;
+    margin-left: 10px;
+}
+.carousel-item {
+    height: 900px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+.carousel-item::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6));
+    z-index: 1;
+}
+.carousel-caption {
+    z-index: 2;
+}
+.carousel-caption button {
+    font-size: 12px;
+    padding: 5px 10px;
+    margin-top: 10px;
+}
+
+h2{
+    font-size: 90px;
+}
+.btn-primary{
+    font-size: 18px;
+}
+.carousel-caption p{
+    font-size: 22px;
+   
+}
+.carousel-item button a{
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+/* Media Queries */
+@media (max-width: 768px) {
+    .carousel-item {
+        height: 700px;
+    }
+}
+
+.services {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.services .heading {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.services .card {
+    display: inline-block;
+    margin: 10px;
+    width: 18rem;
+    vertical-align: top;
+}
+#contact {
+    background-color: #7e7d7df8;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+#contact h3 {
+    margin-bottom: 20px;
+}
+
+#contact .form-label {
+    font-weight: bold;
+}
+
+/*---About section styles---*/
+.about-img {
+    width: 100%; 
+    height: 400px; 
+    object-fit: cover; 
+}
+/*---Reviews section styles--*/
+.testimonials__grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .testimonials__grid .card {
+    padding: 2rem;
+    display: grid;
+    gap: 1rem;
+    background-color: var(--extra-light);
+    border-radius: 5px;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+  
+  .testimonials__grid .card i {
+    font-size: 2.5rem;
+    color: gold;
+  }
+  
+  .testimonials__grid .card p {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  
+  .testimonials__grid .card hr {
+    width: 40px;
+    margin: auto;
+    color: var(--text-light);
+  }
+  
+  .testimonials__grid .card img {
+    width: 60px;
+    height: 60px;
+    margin: auto;
+    border-radius: 100%;
+    border: 1px solid var(--primary-color);
+  }
+  
+  .testimonials__grid .card .name {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: var(--text-light);
+    transition: 0.3s;
+  }
+  
+  .testimonials__grid .card .name:hover {
+    color: var(--primary-color);
+  }
+/*----Review---*/
+.reviews h3{
+  text-align: center;
+  padding-top: 15px;
+  font-weight: 500;
+}
+
+.reviews .card{
+    display: inline-block;
+    padding: 0 15px;
+    align-items: center;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+.reviews .cards{
+    align-items: center;
+    position: center;
+    margin-left: 85px;
+}
+
+/*--Review form---*/
+/* Style for Review Form */
+#reviewForm {
+    background-color: #7e7d7df8;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-left: 50px;
+    margin-top: 15px;
+    margin-right: 50px;
+}
+
+/* Label Style */
+.form-label {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Star Rating Styling */
+#rating {
+    display: flex;
+    justify-content: flex-start;
+    gap: 5px;
+}
+
+.star {
+    font-size: 30px;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.star:hover,
+.star.selected {
+    color: #ffcc00; /* Gold color */
+}
+
+/* Button Style */
+button[type="submit"] {
+    font-size: 16px;
+    padding: 10px 20px;
+}
+
+/* Responsive Form */
+@media (max-width: 768px) {
+    #reviewForm {
+        padding: 20px;
+    }
+}
+
+/* Footer Styles */
+footer {
+    background-color: #343a40;
+    padding: 20px 0;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #ffffff;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #ffcc00;
+}

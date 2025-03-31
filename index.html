@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navigation, Carousel & Footer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      
+    </style>
+</head>
+<body>
+    <!-- Responsive Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">SafeTravels <i style="color:#4DD0E1;" class="fa fa-plane"></i></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reviews">Reviews</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home main section -->
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+        <div class="carousel-inner">
+            <div class="carousel-item active" style="background-image: url('images/travel1.jpg');">
+                <div class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100">
+                    <h2 class="text-white">Explore New Destinations</h2>
+                    <p class="text-white">Discover breathtaking places and unforgettable experiences.</p>
+                    <button class="btn btn-primary"><a href="">Learn More</a></button>
+                </div>
+            </div>
+            <div class="carousel-item" style="background-image: url('images/travel2.jpg');">
+                <div class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100">
+                    <h2 class="text-white">Adventure Awaits</h2>
+                    <p class="text-white">Embark on thrilling journeys around the globe.</p>
+                    <button class="btn btn-primary"><a href="#contact">Contact Now</a></button>
+                </div>
+            </div>
+            <div class="carousel-item" style="background-image: url('images/travel3.jpg');">
+                <div class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100">
+                    <h2 class="text-white">Discover the World</h2>
+                    <p class="text-white">Let your adventure begin with unforgettable memories.</p>
+                    <button class="btn btn-primary"><a href="">Book Now</a></button>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+    
+      <!--Services section-->
+      <div class="services" id="services" >
+        <h3>Our Services</h3>
+        <div class="card" style="width: 18rem;">
+          <img src="images/flightbook2.jpg" class="card-img-top" alt="Flight Booking image">
+          <div class="card-body">
+            <h5 class="card-title">Flight Booking</h5>
+            <p class="card-text">Book your flight quickly without delaying.</p>
+            <a href="#" class="btn btn-primary">Book Now</a>
+          </div>
+        </div>
+  
+        <div class="card" style="width: 18rem;">
+          <img src="images/hotel book.webp" class="card-img-top" alt="Transport service image">
+          <div class="card-body">
+            <h5 class="card-title">Hotel Reservation</h5>
+            <p class="card-text">Customers can Reserve their favourite hotels from our online platform.</p>
+            <a href="#" class="btn btn-primary">Reserve Now</a>
+          </div>
+        </div>
+  
+        <div class="card" style="width: 18rem;">
+          <img src="images/transport.jpg" class="card-img-top" alt="Transport service image">
+          <div class="card-body">
+            <h5 class="card-title">Transport Services</h5>
+            <p class="card-text">Our Online platform provides our customers safe & fast travelling modes.</p>
+            <a href="#" class="btn btn-primary">Select Transport</a>
+          </div>
+        </div>
+  
+        <div class="card" style="width: 18rem;">
+          <img src="images/vacation.webp" class="card-img-top" alt="vacation service image">
+          <div class="card-body">
+            <h5 class="card-title">Vacation Packages</h5>
+            <p class="card-text">We provide our customers best Vacation deals for best prices around the world.</p>
+            <a href="#" class="btn btn-primary">See Packages</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- About Us Section -->
+<section class="py-5" id="about">
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- Image Section -->
+            <div class="col-md-6">
+                <img id="about-img" src="images/about1.jpg" class="img-fluid rounded about-img" alt="About SafeTravels">
+            </div>
+            <!-- Description Section -->
+            <div class="col-md-6">
+                <h3 class="mb-4" id="about">About SafeTravels</h3>
+                <p>
+                    At <strong>SafeTravels</strong>, we believe that every journey should be unforgettable, comfortable, and safe. We are dedicated to providing seamless travel experiences that allow you to explore the world without worries. Whether you are looking for adventure, relaxation, or cultural immersion, we cater to all your travel needs with exceptional service and personalized solutions.
+                </p>
+                <p>
+                    Our mission is to inspire and connect travelers with unforgettable experiences. From flights and hotel reservations to guided tours and vacation packages, SafeTravels is your trusted companion for every step of your journey.
+                </p>
+                <p>
+                    Let us help you explore the world with confidence, comfort, and joy!
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+  
+      <!-- Contact Section -->
+<section id="contact" class="py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- Image on the Left -->
+            <div class="col-md-6">
+                <img src="images/contact.jpg" alt="Contact Image" class="img-fluid rounded">
+            </div>
+            <!-- Contact Form on the Right -->
+            <div class="col-md-6">
+                <h3 id="contact">Contact Us</h3>
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" rows="4" placeholder="Enter your message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Client's reviews-->
+<section class="reviews" id="reviews">
+    <h3>What our Clients Say</h3>
+    <div class="cards">
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">Mr.John Fernando</h5>
+        <p class="card-text">SafeTravel is the best travelling agency that I met.They provide better service. </p>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">Mrs.Susan Perera</h5>
+        <p class="card-text">We travel around Sri Lanka and Many countries. I highly recommend to everyone. </p>
+        
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">Mr.Sumeda Peiris</h5>
+        <p class="card-text">I love their service. Best service ever. Quick and fast and safe flight.</p>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">Mrs.Nayomi Withanage</h5>
+        <p class="card-text">As a Traveller I appreciate the agency team for the memorable expeirience.</p>
+      </div>
+    </div>
+  </div>
+
+  <!---Add review form-->
+ <!-- Customer Review Form -->
+ <form id="reviewForm">
+    <div class="mb-3">
+        <label for="name" class="form-label">Your Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+    </div>
+    <div class="mb-3">
+        <label for="message" class="form-label">Your Review</label>
+        <textarea class="form-control" id="message" rows="4" placeholder="Enter your review message"></textarea>
+    </div>
+    <div class="mb-3">
+        <label for="rating" class="form-label">Rating</label>
+        <div id="rating">
+            <!-- Star rating system -->
+            <span class="star" data-value="1">&#9733;</span>
+            <span class="star" data-value="2">&#9733;</span>
+            <span class="star" data-value="3">&#9733;</span>
+            <span class="star" data-value="4">&#9733;</span>
+            <span class="star" data-value="5">&#9733;</span>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit Review</button>
+</form>
+
+  
+</section>
+
+<!-- Footer -->
+<!-- Footer -->
+<footer class="mt-5 bg-dark text-white py-4">
+    <div class="container text-center">
+        <p>&copy; 2025 SafeTravels. All Rights Reserved. Created by Senura Peiris</p>
+        <div class="social-icons mt-3">
+            <a href="https://www.facebook.com" class="text-white me-3"><i class="fa fa-facebook fa-2x"></i></a>
+            <a href="https://www.twitter.com" class="text-white me-3"><i class="fa fa-twitter fa-2x"></i></a>
+            <a href="https://www.instagram.com" class="text-white me-3"><i class="fa fa-instagram fa-2x"></i></a>
+            <a href="https://www.linkedin.com" class="text-white"><i class="fa fa-linkedin fa-2x"></i></a>
+        </div>
+    </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+<style>
+    /* Ensure the images have the same height and width */
+   
+</style>
+</body>
+</html>

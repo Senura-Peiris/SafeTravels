@@ -1,0 +1,88 @@
+/* styles.css */
+body {
+    background: linear-gradient(120deg, #4a90e2, #50c9c3);
+}
+/*=--Navigation bar styles---*/
+
+.navbar-nav .nav-link.active {
+    color: yellow !important;
+}
+.carousel-item {
+    height: 500px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.carousel-item::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7));
+    z-index: 1;
+}
+.carousel-caption {
+    z-index: 2;
+}
+.carousel-caption button {
+    font-size: 12px;
+    padding: 5px 10px;
+    margin-top: 10px;
+}
+/*---Services section styles---*/
+.services{
+    text-align: center;
+}
+.services .card{
+    display: inline-block;
+    padding: 0 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+/*---Home main section styles---*/
+.carousel-item {
+    height: 800px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: auto;
+    
+}
+
+.carousel-item::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8));
+    z-index: 1;
+}
+.carousel-caption {
+    z-index: 2;
+}
+.carousel-caption button {
+    font-size: 12px;
+    padding: 10px 15px;
+    margin-top: 10px;
+}
+
+
+.btn a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+h1 .text-white{
+    font-size: 80px
+}
+/* common styles */
+.heading{
+    color: blue;
+    margin-top: 10px
+}
